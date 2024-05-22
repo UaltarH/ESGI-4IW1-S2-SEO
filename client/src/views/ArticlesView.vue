@@ -1,10 +1,8 @@
 <template>
-<main>
   <h1>Articles - Terrain Confus</h1>
-</main>
 </template>
 
-<script>
+<script lang="ts" setup>
 
 </script>
 

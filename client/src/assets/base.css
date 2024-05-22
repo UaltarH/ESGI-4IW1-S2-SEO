@@ -1,13 +1,3 @@
-:root {
-  --primary: #88AB8E;
-  --primary-light: #AFC8AD;
-  --secondary: #EEE7DA;
-  --secondary-light: #F2F1EB;
-  --success: #88AB8E;
-  --warning: #F2CC8F;
-  --danger: #E07A5F;
-}
-
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
   --vt-c-white: #ffffff;

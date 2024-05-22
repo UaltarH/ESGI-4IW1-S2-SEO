@@ -12,7 +12,7 @@
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "scss": "sass src/assets/input.scss src/assets/main.css"
+    "scss": "sass --watch src/assets/input.scss src/assets/main.css"
   },
   "dependencies": {
     "pinia": "^2.1.7",
