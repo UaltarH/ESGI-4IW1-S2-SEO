@@ -14,9 +14,14 @@ Projet SEO - ESGI 4IW1 S2
 ### Development
 
 ```bash
-docker compose up --detach --build
+docker compose up -d --remove-orphans
+npm run scss
 ```
 
 ### Production
 
 TODO
+
+## Authors
+@Mathvss - Mathieu PANNETRAT
+@UaltarH - Gauthier LO
