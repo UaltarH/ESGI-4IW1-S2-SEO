@@ -1,8 +1,9 @@
 <template>
   <main-menu :menu-items="menuItems"></main-menu>
-  <main>
+  <main class="min-h-screen">
     <NuxtPage />
   </main>
+  <main-footer />
 </template>
 <script setup lang="ts">
 import {onMounted} from 'vue';
@@ -21,8 +22,11 @@ const description = ref('Terrain confus, trouvez votre terrain confus préféré
 // This will be reactive when you change title/description above
 useHead({
   title,
+  htmlAttrs: {
+    lang: 'fr',
+  },
   meta: [
-      {
+    {
       name: 'description',
       content: description
     },

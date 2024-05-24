@@ -10,6 +10,13 @@ export const useDarkMode = () => {
     }
     const applyDarkMode = ((checked: boolean) => {
         const html = document.getElementsByTagName("html")[0];
+        const toggle = document.getElementById("dark-mode-toggle");
+        if(toggle === null) {
+            return;
+        }
+        else {
+            (toggle as HTMLInputElement).checked = checked;
+        }
         if(checked) {
             html.classList.add("dark");
         } else {
