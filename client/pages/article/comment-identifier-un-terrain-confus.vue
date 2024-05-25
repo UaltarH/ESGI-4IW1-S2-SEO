@@ -22,8 +22,6 @@
 <script setup lang="ts">
 import {articles} from '~/composables/data';
 import type {Article} from "~/data/article.dto";
-import type {Component} from "vue";
-import type {Tag} from "~/data/tag.dto";
 import date from '@/components/icons/date.vue';
 
 const article: Article = articles.find((article) => article.url === '/article/comment-identifier-un-terrain-confus');
