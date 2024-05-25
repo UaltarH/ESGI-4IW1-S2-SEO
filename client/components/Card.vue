@@ -8,6 +8,7 @@
         </div>
         <div class="flex flex-wrap gap-1">
           <tag v-for="tag in props.tags" :name="tag.name" :component="tag.icon" :color="tag.color"></tag>
+          <span v-for="tag in tags">{{ tag.name }}</span>
         </div>
       </header>
       <div class="text-gray-500 dark:text-gray-500 mb-2">
