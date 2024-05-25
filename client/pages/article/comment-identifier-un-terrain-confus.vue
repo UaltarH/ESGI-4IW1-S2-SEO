@@ -1,5 +1,5 @@
 <template>
-  <article class="py-8">
+  <article class="py-24">
     <header>
       <div class="flex items-center gap-4 mb-6 text-md uppercase">
         <component :is="article.icon" :width="80" :height="80"></component>

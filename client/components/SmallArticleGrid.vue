@@ -1,4 +1,5 @@
 <template>
+  <h2 class="text-5xl mb-10 font-medium text-center">Derniers articles</h2>
   <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 mb-8">
     <Card v-for="(article) in articles"
           :title="article.title"

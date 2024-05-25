@@ -1,5 +1,5 @@
 <template>
-  <div class="py-24 sm:py-32 md:py-40 relative">
+  <div class="py-24 sm:py-32 md:py-52 relative">
     <div class="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl gap-16 sm:gap-y-24 flex flex-col">
       <div class="text-center relative z-[1]">
         <h1 class="text-5xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-7xl normal-case">
