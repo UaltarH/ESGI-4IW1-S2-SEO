@@ -8,7 +8,6 @@
         </div>
         <div class="flex flex-wrap gap-1">
           <tag v-for="tag in props.tags" :name="tag.name" :component="tag.icon" :color="tag.color"></tag>
-          <span v-for="tag in tags">{{ tag.name }}</span>
         </div>
       </header>
       <div class="text-gray-500 dark:text-gray-500 mb-2">
@@ -27,7 +26,7 @@
 import {type Component, defineProps} from 'vue';
 import date from '@/components/icons/date.vue';
 import tag from '@/components/Tag.vue';
-import {type Tag} from '@/data/tag.dto'
+import {type Tag as tagtype} from '@/data/tag.dto'
 
 const iconWidth = 50;
 const iconHeight = 50;
@@ -36,7 +35,7 @@ const props = defineProps<{
   icon: Component;
   link: string;
   date: string;
-  tags: Tag[];
+  tags: tagtype[];
 }>();
 const options = {
   year: 'numeric',
