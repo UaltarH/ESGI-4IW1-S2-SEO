@@ -15,6 +15,13 @@
   --lg: #{ v.$lg };
   --md: #{ v.$md };
   --sm: #{ v.$sm };
+
+  --tag-news: #{ v.$tag_news };
+  --tag-tutorial: #{ v.$tag_tutorial };
+  --tag-announcement: #{ v.$tag_announcement };
+  --tag-news-bg : #{ v.$tag_news_bg };
+  --tag-tutorial-bg : #{ v.$tag_tutorial_bg };
+  --tag-announcement-bg : #{ v.$tag_announcement_bg };
 }
 
 #app {

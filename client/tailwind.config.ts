@@ -22,6 +22,12 @@ export default <Partial<Config>>{
         'warning': 'var(--warning)',
         'dark-blue': 'var(--dark-blue)',
         'dark-blue-dark': 'var(--dark-blue-dark)',
+        'tag-news': 'var(--tag-news)',
+        'tag-tutorial': 'var(--tag-tutorial)',
+        'tag-announcement': 'var(--tag-announcement)',
+        'tag-news-bg': 'var(--tag-news-bg)',
+        'tag-tutorial-bg': 'var(--tag-tutorial-bg)',
+        'tag-announcement-bg': 'var(--tag-announcement-bg)',
       },
       width: {
         'xl': 'var(--xl)',
