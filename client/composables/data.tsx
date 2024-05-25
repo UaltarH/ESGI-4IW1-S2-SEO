@@ -39,7 +39,7 @@ export const articles: Article[] = [
             'Un terrain confus peut être difficile à naviguer et à utiliser. En identifiant les zones de votre terrain qui sont confuses, vous pourrez les améliorer et les rendre plus lisibles.<br/>' +
             'En suivant les astuces que nous vous avons données dans notre article précédent, vous pourrez identifier un terrain confus et le rendre plus lisible.<br/>',
         icon: logo,
-        date: '2025-05-24',
+        date: '2024-05-25',
         url: '/article/pourquoi-identifier-un-terrain-confus',
     },
 ];
