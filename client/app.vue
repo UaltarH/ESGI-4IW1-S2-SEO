@@ -56,7 +56,7 @@ useHead({
     },
     {
       property: 'og:image',
-      content: ''
+      content: 'https://terrain-confus.fr/og-image.jpg'
     },
     {
       name: 'twitter:card',
@@ -76,7 +76,7 @@ useHead({
     },
     {
       name: 'twitter:image',
-      content: ''
+      content: 'https://terrain-confus.fr/twitter-image.png'
     },
     {
       name: 'viewport',
