@@ -48,7 +48,7 @@ useHead({
     },
     {
       property: 'og:url',
-      content: 'https://terrain-confus.fr'
+      content: 'https://terrainconfus.fr'
     },
     {
       property: 'og:description',
@@ -56,7 +56,7 @@ useHead({
     },
     {
       property: 'og:image',
-      content: 'https://terrain-confus.fr/og-image.jpg'
+      content: 'https://terrainconfus.fr/og-image.jpg'
     },
     {
       name: 'twitter:card',
@@ -76,7 +76,7 @@ useHead({
     },
     {
       name: 'twitter:image',
-      content: 'https://terrain-confus.fr/twitter-image.png'
+      content: 'https://terrainconfus.fr/twitter-image.png'
     },
     {
       name: 'viewport',
