@@ -8,13 +8,17 @@ Projet SEO - ESGI 4IW1 S2
 
 - Docker
 - Docker Compose
+- NodeJS
 
 ## Usage
 
 ### Development
 
 ```bash
-docker compose up -d --remove-orphans
+#docker compose up -d --remove-orphans
+#note only working with client right now
+cd client
+npm run dev
 npm run scss
 ```
 
