@@ -1,4 +1,5 @@
 @use 'variables' as v;
+@use 'fonts' as f;
 
 :root {
   --primary: #{ v.$primary };
@@ -28,6 +29,11 @@
   margin: 0 auto;
   font-weight: normal;
 }
+body {
+  font-size: 1rem;
+  background-color: white;
+  font-family: f.$font;
+}
 html.dark {
   body {
     background-color: var(--dark-blue);
@@ -49,4 +55,22 @@ header {
     font-size: 1.5rem;
     margin: 0;
   }
+}
+article:not(.card) {
+  h2 {
+    @apply text-3xl font-medium mb-4;
+  }
+  p {
+    @apply mb-4 leading-loose tracking-wide;
+  }
+  ul {
+    @apply list-disc list-outside pl-6;
+
+  }
+  li {
+    @apply mb-2 leading-loose tracking-wide;
+  }
+}
+b {
+  @apply font-semibold;
 }

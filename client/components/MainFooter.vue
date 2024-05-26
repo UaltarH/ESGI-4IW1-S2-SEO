@@ -3,7 +3,7 @@
     <div class="flex flex-col sm:w-full xl:w-xl sm:h-12 items-center m-auto">
       <div class="row flex flex-row w-full">
         <div class="flex-1 text-left">
-          <p class="text-center">© 2024. Terrain Confus - All Rights Reserved.</p>
+          <p>© 2024. Terrain Confus - All Rights Reserved.</p>
         </div>
         <div class="flex-1 text-right">
           <ul>
