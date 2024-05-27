@@ -90,6 +90,12 @@ useHead({
       name: 'language',
       content: 'French'
     }
+  ],
+  link: [
+    {
+      rel: 'preconnect',
+      href: 'https://fonts.googleapis.com'
+    }
   ]
 })
 </script>

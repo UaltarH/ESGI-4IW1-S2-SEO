@@ -16,7 +16,7 @@
     </div>
     <footer class="card--footer flex items-center justify-between">
       <div class="flex items-center gap-1">
-        <date></date><time :datetime="props.date" class="text-gray-400 dark:text-gray-700">{{ dateText }}</time>
+        <date></date><time :datetime="props.date" class="text-gray-400 dark:text-gray-700">Publié le {{ dateText }}</time>
       </div>
       <NuxtLink :to="link" class="btn btn--primary">Lire la suite</NuxtLink>
     </footer>

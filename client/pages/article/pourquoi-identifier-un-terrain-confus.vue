@@ -10,7 +10,7 @@
           <tag v-for="tag in article.tags" :name="tag.name" :component="tag.icon" :color="tag.color"></tag>
         </div>
         <div class="flex items-center gap-1">
-          <date></date><time :datetime="article.date" class="text-gray-400 dark:text-gray-700">{{ dateText }}</time>
+          <date></date><time :datetime="article.date" class="text-gray-400 dark:text-gray-700">Publié le {{ dateText }}</time>
         </div>
       </div>
     </header>

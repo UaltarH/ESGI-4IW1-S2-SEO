@@ -33,11 +33,12 @@ body {
   font-size: 1rem;
   background-color: white;
   font-family: f.$font;
+  color: var(--dark-blue);
 }
 html.dark {
   body {
     background-color: var(--dark-blue);
-    color: var(--secondary-light);
+    color: white;
   }
 }
 main {
