@@ -18,4 +18,13 @@
 import Card from "@/components/Card.vue";
 import {articles} from "~/composables/data";
 
+useSeoMeta({
+  title: 'Articles - Terrain Confus',
+  description: 'Retrouvez tous les articles de Terrain Confus',
+  ogTitle: 'Articles - Terrain Confus',
+  ogUrl: 'https://terrainconfus.fr/articles',
+  ogDescription: 'Retrouvez tous les articles de Terrain Confus',
+  twitterTitle: 'Articles - Terrain Confus',
+  twitterDescription: 'Retrouvez tous les articles de Terrain Confus',
+})
 </script>

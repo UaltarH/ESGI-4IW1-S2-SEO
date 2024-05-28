@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     families: {
-      'Poppins': '200..700',
+      'Poppins': true,
     }
   }
 })

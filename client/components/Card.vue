@@ -23,7 +23,7 @@
   </article>
 </template>
 <script lang="ts" setup>
-import {type Component, defineProps} from 'vue';
+import {type Component} from 'vue';
 import date from '@/components/icons/date.vue';
 import {type Tag as tagtype} from '@/data/tag.dto'
 

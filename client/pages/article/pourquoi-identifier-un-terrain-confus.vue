@@ -22,8 +22,6 @@
 <script setup lang="ts">
 import {articles} from '~/composables/data';
 import type {Article} from "~/data/article.dto";
-import type {Component} from "vue";
-import type {Tag} from "~/data/tag.dto";
 import date from '@/components/icons/date.vue';
 
 const article: Article = articles.find((article) => article.url === '/article/pourquoi-identifier-un-terrain-confus');
@@ -34,5 +32,14 @@ const options = {
 };
 let articleDate:Date = new Date(article.date);
 const dateText = articleDate.toLocaleDateString('fr-FR', options);
-
+const description = 'Découvrez pourquoi identifier un terrain confus est important';
+useSeoMeta({
+  title: article.title,
+  description: description,
+  ogTitle: article.title,
+  ogUrl: `https://terrainconfus.fr${article.url}`,
+  ogDescription: description,
+  twitterTitle: article.title,
+  twitterDescription: description,
+});
 </script>

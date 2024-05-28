@@ -46,4 +46,15 @@
 </template>
 <script lang="ts" setup>
 
+const description = 'Découvrez l\'histoire et la mission de TerrainConfus.fr, votre référence ultime pour les terrains confus.';
+const title = 'À propos de TerrainConfus.fr';
+useSeoMeta({
+  title: title,
+  description: description,
+  ogTitle: title,
+  ogUrl: `https://terrainconfus.fr/about`,
+  ogDescription: description,
+  twitterTitle: title,
+  twitterDescription: description,
+});
 </script>

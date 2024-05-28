@@ -33,4 +33,14 @@ const options = {
 let articleDate:Date = new Date(article.date);
 const dateText = articleDate.toLocaleDateString('fr-FR', options);
 
+const description = 'Découvrez comment identifier un terrain confus dans cet article';
+useSeoMeta({
+  title: article.title,
+  description: description,
+  ogTitle: article.title,
+  ogUrl: `https://terrainconfus.fr${article.url}`,
+  ogDescription: description,
+  twitterTitle: article.title,
+  twitterDescription: description,
+});
 </script>

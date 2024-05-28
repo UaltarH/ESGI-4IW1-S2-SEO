@@ -20,7 +20,7 @@
   </div>
 </template>
 <script lang="ts" setup>
-import {type Component, defineProps} from 'vue';
+import {type Component} from 'vue';
 import {TagType} from "~/data/tag.dto";
 
 const props = defineProps<{
