@@ -14,9 +14,7 @@
         </div>
       </div>
     </header>
-    <div>
-      <p v-html="article.content"></p>
-    </div>
+    <div v-html="article.content"></div>
   </article>
 </template>
 <script setup lang="ts">

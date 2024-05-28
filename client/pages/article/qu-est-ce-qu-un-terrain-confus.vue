@@ -22,7 +22,7 @@ import {articles} from '~/composables/data';
 import type {Article} from "~/data/article.dto";
 import date from '@/components/icons/date.vue';
 
-const article: Article = articles.find((article) => article.url === '/article/pourquoi-identifier-un-terrain-confus');
+const article: Article = articles.find((article) => article.url === '/article/qu-est-ce-qu-un-terrain-confus');
 const options = {
   year: 'numeric',
   month: 'long',
@@ -30,7 +30,8 @@ const options = {
 };
 let articleDate:Date = new Date(article.date);
 const dateText = articleDate.toLocaleDateString('fr-FR', options);
-const description = 'Découvrez pourquoi identifier un terrain confus est important';
+
+const description = 'Qu\'est-ce qu\'un terrain confus ? Découvrez la réponse dans cet article.';
 useSeoMeta({
   title: article.title,
   description: description,

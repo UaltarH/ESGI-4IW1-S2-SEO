@@ -39,8 +39,6 @@
       <p>
         Merci de faire partie de notre aventure et de contribuer à la découverte des terrains confus de ce monde.
       </p>
-
-
     </article>
   </div>
 </template>

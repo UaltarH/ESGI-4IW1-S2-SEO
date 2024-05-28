@@ -9,7 +9,7 @@
             :date="article.date"
             :tags="article.tags"
       >
-        <p v-html="article.content" class="max-h-12 text-ellipsis overflow-hidden whitespace-nowrap"></p>
+        <div v-html="article.content" class="article-preview max-h-12 min-h-12 overflow-hidden"></div>
       </Card>
     </div>
   </div>
