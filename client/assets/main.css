@@ -104,16 +104,25 @@ b {
     @apply absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-secondary transition duration-500;
   }
   .slider:before {
+    background-image: url("/public/sun.svg");
+    background-size: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .slider:before {
     @apply absolute content-[""] h-6 w-6 left-1 bottom-1 bg-white transition duration-500;
   }
-  input:checked + .slider {
+  #dark-mode-toggle.dark .slider {
     @apply bg-dark-blue;
   }
-  input:focus + .slider {
+  #dark-mode-toggle:focus + .slider {
     @apply shadow;
   }
-  input:checked + .slider:before {
+  #dark-mode-toggle.dark .slider:before {
     @apply translate-x-6;
+  }
+  #dark-mode-toggle.dark .slider:before {
+    background-image: url("/public/moon-stars.svg");
   }
   /* Rounded sliders */
   .slider.round {

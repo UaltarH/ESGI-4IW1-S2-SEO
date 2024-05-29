@@ -1,5 +1,6 @@
 <template>
   <svg width="24" height="24" viewBox="18 16 24 24" xmlns="http://www.w3.org/2000/svg">
+    <title>Calendrier</title>
     <defs>
       <filter id="a" width="200%" height="200%" x="-50%" y="-50%" filterUnits="objectBoundingBox">
         <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>

@@ -1,5 +1,6 @@
 <template>
   <svg version="1.1" width="257" height="257" viewBox="0 0 258.066 257" xmlns="http://www.w3.org/2000/svg">
+    <title>Logo Terrain Confus</title>
     <defs/>
     <g transform="matrix(1,0,0,1,-1.2121212121212466,-0.024255182491117466)">
       <svg viewBox="0 0 396 51" data-background-color="#88ab8e" preserveAspectRatio="xMidYMid meet" height="257" width="2000" xmlns="http://www.w3.org/2000/svg">
