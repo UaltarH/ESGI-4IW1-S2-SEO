@@ -12,7 +12,8 @@
       </ul>
       <div class="flex flex-0.5 gap-2 items-center">
         <NuxtLink to="/login" class="menu-link rounded-md hover:bg-primary-light px-3.5 py-2.5 shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-700">Connexion</NuxtLink>
-        <dark-mode></dark-mode>
+<!--        <dark-mode></dark-mode>-->
+        <dark-mode-button></dark-mode-button>
       </div>
     </nav>
   </header>
@@ -20,6 +21,7 @@
 <script lang="ts" setup>
 import {ref} from "vue";
 import DarkMode from "@/components/DarkMode.vue";
+import DarkModeButton from "./DarkModeButton.vue";
 import LogoWithText from "~/components/icons/logoWithText.vue";
 
 const props = defineProps(['menuItems']);

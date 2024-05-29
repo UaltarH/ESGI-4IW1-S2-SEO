@@ -1,26 +1,48 @@
 export const useDarkMode = () => {
+    // const toggleDarkMode = (e: Event) => {
+    //     console.log(e)
+    //     if(e.target === null) {
+    //         return;
+    //     }
+    //     if(!(e.target instanceof HTMLInputElement))
+    //         return;
+    //     applyDarkMode(e.target.checked);
+    //     localStorage.setItem("darkMode", e.target.checked.toString());
+    // };
     const toggleDarkMode = (e: Event) => {
+        console.log(e)
         if(e.target === null) {
             return;
         }
-        if(!(e.target instanceof HTMLInputElement))
+        if(!(e.target instanceof HTMLElement))
             return;
-        applyDarkMode(e.target.checked);
-        localStorage.setItem("darkMode", e.target.checked.toString());
-    }
-    const applyDarkMode = ((checked: boolean) => {
+        let isDarkMode:boolean = applyDarkMode();
+        localStorage.setItem("darkMode", String(isDarkMode));
+    };
+    const applyDarkMode = ((isToggled?:boolean) => {
         const html = document.getElementsByTagName("html")[0];
         const toggle = document.getElementById("dark-mode-toggle");
         if(toggle === null) {
-            return;
+            throw new Error("Dark mode toggle not found");
+        }
+        if(isToggled === undefined) {
+            console.log("Manually toggling dark mode");
+            html.classList.toggle("dark");
+            toggle.classList.toggle("dark");
+            return html.classList.contains("dark");
         }
         else {
-            (toggle as HTMLInputElement).checked = checked;
-        }
-        if(checked) {
-            html.classList.add("dark");
-        } else {
-            html.classList.remove("dark");
+            console.log("Applying dark mode preference");
+            if(isToggled) {
+                html.classList.add("dark");
+                if(!toggle.classList.contains("dark"))
+                    toggle.classList.add("dark");
+                return true
+            } else {
+                html.classList.remove("dark");
+                toggle.classList.remove("dark");
+                return false;
+            }
         }
     });
     const loadDarkModePreference = (() => {
@@ -28,5 +50,5 @@ export const useDarkMode = () => {
         const isDarkMode = darkMode === "true";
         applyDarkMode(isDarkMode);
     });
-    return {toggleDarkMode, loadDarkModePreference}
-}
+    return {toggleDarkMode, loadDarkModePreference};
+};

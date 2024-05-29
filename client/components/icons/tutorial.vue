@@ -1,6 +1,7 @@
 <template>
   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
        viewBox="0 0 32 32" xml:space="preserve" :fill="color">
+    <title>Tutoriel</title>
     <line :style="'stroke:'+color" style="fill:none;stroke-width:2;stroke-miterlimit:10;" x1="3" y1="13" x2="3" y2="24"/>
     <circle cx="3" cy="24" r="2"/>
     <polygon :style="'stroke:'+color" style="fill:none;stroke-width:2;stroke-miterlimit:10;" points="16,8.833 3.5,13 16,17.167 28.5,13 "/>

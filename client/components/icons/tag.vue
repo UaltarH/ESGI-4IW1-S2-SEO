@@ -1,5 +1,6 @@
 <template>
   <svg width="16" height="16" viewBox="12 10 32 32" xmlns="http://www.w3.org/2000/svg">
+    <title>Etiquette</title>
     <defs>
       <filter id="a" width="200%" height="200%" x="-50%" y="-50%" filterUnits="objectBoundingBox">
         <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
