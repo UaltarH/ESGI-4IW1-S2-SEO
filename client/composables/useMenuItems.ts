@@ -3,7 +3,7 @@ import {reactive} from "vue";
 export const useMenuItems = () => {
     const menuItems = reactive([
         {
-            title: 'Home',
+            title: 'Accueil',
             icon: '',
             route: '/',
             access: 'all',
@@ -14,6 +14,12 @@ export const useMenuItems = () => {
             route: '/articles',
             access: 'all',
         },
+        {
+            title: 'À propos',
+            icon: '',
+            route: '/about',
+            access: 'all',
+        }
     ]);
 
     return {menuItems}
