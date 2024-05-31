@@ -61,6 +61,7 @@ export const articles: Article[] = [
         '<p>Explorez, découvrez et protégez avec TerrainConfus.fr.</p>',
         icon: logo,
         date: '2024-05-25',
+        updateDate: '2024-05-31',
         url: '/article/pourquoi-identifier-un-terrain-confus',
     },
     {

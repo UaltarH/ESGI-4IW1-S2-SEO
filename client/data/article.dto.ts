@@ -7,6 +7,7 @@ export interface Article {
     content: string;
     icon: Component;
     date: string;
+    updateDate?: string;
     url: string;
 }
 export function getLatestArticles(articles: Article[], count: number): Article[] {

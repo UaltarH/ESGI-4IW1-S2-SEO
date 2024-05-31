@@ -7,9 +7,10 @@
             :icon="article.icon"
             :link="article.url"
             :date="article.date"
+            :updateDate="article.hasOwnProperty('updateDate') ? article.updateDate : undefined"
             :tags="article.tags"
       >
-        <div v-html="article.content" class="article-preview max-h-12 min-h-12 overflow-hidden"></div>
+        <div v-html="getArticleDescription(article.content)" class="article-preview max-h-12 min-h-12 overflow-hidden"></div>
       </Card>
     </div>
   </div>
@@ -17,7 +18,9 @@
 <script lang="ts" setup>
 import Card from "@/components/Card.vue";
 import {articles} from "~/composables/data";
+import {useArticleDescription} from "~/composables/useArticleDescription";
 
+const {getArticleDescription} = useArticleDescription();
 useSeoMeta({
   title: 'Articles - Terrain Confus',
   description: 'Retrouvez tous les articles de Terrain Confus',

@@ -16,7 +16,9 @@
     </div>
     <footer class="card--footer flex items-center justify-between">
       <div class="flex items-center gap-1">
-        <date></date><time :datetime="props.date" class="text-gray-400 dark:text-gray-700">Publié le {{ dateText }}</time>
+        <date></date>
+        <time v-if="updateDate === undefined" :datetime="props.date" class="text-gray-400 dark:text-gray-700">Publié le {{ dateText(props.date) }}</time>
+        <time v-else :datetime="props.updateDate" class="text-gray-400 dark:text-gray-700">Mis à jour le {{ dateText(props.updateDate!) }}</time>
       </div>
       <NuxtLink :to="link" class="btn btn--primary">Lire la suite</NuxtLink>
     </footer>
@@ -26,6 +28,9 @@
 import {type Component} from 'vue';
 import date from '@/components/icons/date.vue';
 import {type Tag as tagtype} from '@/data/tag.dto'
+import {useArticleDescription} from "~/composables/useArticleDescription";
+
+const {dateText} = useArticleDescription();
 
 const iconWidth = 50;
 const iconHeight = 50;
@@ -34,13 +39,8 @@ const props = defineProps<{
   icon: Component;
   link: string;
   date: string;
+  updateDate?: string;
   tags: tagtype[];
 }>();
-const options = {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-};
-const dateText = new Date(props.date).toLocaleDateString('fr-FR', options);
 
 </script>
