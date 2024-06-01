@@ -55,4 +55,12 @@ useSeoMeta({
   twitterTitle: title,
   twitterDescription: description,
 });
+const date = (new Date('2024-05-28T12:00:00')).toISOString()
+useJsonld({
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  'headline': title,
+  'datePublished': date,
+  'dateModified': date,
+});
 </script>

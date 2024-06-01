@@ -2,7 +2,7 @@
   <article class="card">
     <div class="card--content">
       <header class="mb-4">
-        <div class="flex items-end gap-4 mb-6 text-md uppercase">
+        <div class="flex items-center gap-4 mb-6 text-md uppercase">
           <component :is="icon" :width="iconWidth" :height="iconHeight"></component>
           <h2 class="font-medium">{{ title }}</h2>
         </div>

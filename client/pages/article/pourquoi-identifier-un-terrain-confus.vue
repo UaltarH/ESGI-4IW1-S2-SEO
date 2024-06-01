@@ -42,4 +42,13 @@ useSeoMeta({
   twitterTitle: article.title,
   twitterDescription: description,
 });
+
+useJsonld({
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  'headline': article.title,
+  'datePublished': articleDate.toISOString(),
+  'dateModified': article.updateDate ? new Date(article.updateDate).toISOString() : articleDate.toISOString(),
+});
+
 </script>
