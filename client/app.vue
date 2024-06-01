@@ -1,6 +1,6 @@
 <template>
   <main-menu :menu-items="menuItems"></main-menu>
-  <main class="min-h-screen">
+  <main class="min-h-screen px-10 lg:px-0">
     <NuxtPage />
   </main>
   <main-footer />
