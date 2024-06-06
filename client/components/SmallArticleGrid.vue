@@ -10,7 +10,7 @@
             :updateDate="article.hasOwnProperty('updateDate') ? article.updateDate : undefined"
             :tags="article.tags"
       >
-        <div v-html="getArticleDescription(article.content)" class="article-preview max-h-12 min-h-12 overflow-hidden"></div>
+        <!--<div v-html="getArticleDescription(article.content)" class="article-preview max-h-12 min-h-12 overflow-hidden"></div>-->
       </Card>
     </div>
   </section>
