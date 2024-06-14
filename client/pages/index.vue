@@ -1,6 +1,6 @@
 <template>
   <banner></banner>
-  <small-article-grid></small-article-grid>
+<!--  <small-article-grid></small-article-grid>-->
   <section class="py-24 sm:py-32 relative">
     <div class="flex mb-6">
       <div class="lg:w-1/2">
@@ -35,8 +35,12 @@
       </a>
       <a class="flex-shrink-0 font-medium rounded-md gap-x-1.5 p-1.5 hover:bg-gray-50 dark:hover:bg-dark-blue-dark inline-flex items-center" aria-label="Terrain Confus sur Instagram" href="https://www.instagram.com/terrain.confus/" rel="noopener noreferrer" target="_blank">
         <instagram class="fill-black dark:fill-white"></instagram>@terrain.confus
+      </a
+      ><a class="flex-shrink-0 font-medium rounded-md gap-x-1.5 p-1.5 hover:bg-gray-50 dark:hover:bg-dark-blue-dark inline-flex items-center" aria-label="Terrain Confus sur Facebook" href="https://www.facebook.com/groups/terrainconfus" rel="noopener noreferrer" target="_blank">
+        <facebook class="fill-black dark:fill-white"></facebook>Terrain Confus
       <i class="fab fa-instagram"></i>
       </a>
+
     </div>
   </section>
 </template>
@@ -46,4 +50,5 @@ import Banner from "~/components/Banner.vue";
 import SmallArticleGrid from "~/components/SmallArticleGrid.vue";
 import X from "~/components/icons/x.vue";
 import Instagram from "~/components/icons/instagram.vue";
+import Facebook from "~/components/icons/facebook.vue";
 </script>
