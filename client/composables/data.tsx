@@ -3,6 +3,7 @@ import logo from "@/components/icons/logo.vue";
 import Tag from "@/components/icons/tag.vue";
 import Tutorial from "~/components/icons/tutorial.vue";
 import {TagType} from "~/data/tag.dto";
+import News from "~/components/icons/News.vue";
 
 export const articles: Article[] = [
     {
@@ -88,5 +89,44 @@ export const articles: Article[] = [
         icon: logo,
         date: '2024-05-28',
         url: '/article/qu-est-ce-qu-un-terrain-confus',
+    },
+    {
+        title: 'Percer les mystères de la confusion des terrains',
+        tags: [
+            {
+                name: 'News',
+                icon: News,
+                color: TagType.NEWS,
+            }
+        ],
+        content: '<h2>Introduction</h2>' +
+            '<p>Êtes-vous fatigué des mêmes vieux terrains que tout le monde trouve toujours fascinants ? Voulez-vous explorer de nouveaux environnements tout en gardant votre intérêt éveillé ? Si c\'est le cas, alors cet article est fait pour vous. Dans cet article, nous explorerons certaines des découvertes les plus fascinantes concernant les visages de terrain à travers le monde, tout en maintenant votre intérêt. Nous vous fournirons également des conseils sur la manière de naviguer à travers les défis des terrains de manière frontale. Alors plongeons tout de suite !</p>' +
+            '<h2>Lieux à visiter</h2>' +
+            '<p>Lorsque vous voyagez à travers un territoire inconnu, il peut être tentant de rendre votre visite semblable à une descente ou à une montée sur une falaise. Cependant, voici quelques endroits à considérer pour votre visite :' +
+            '<ul><li>Fréquentés par des touristes plutôt que par des locaux</li>' +
+            '<li>Jouant la musique locale</li>' +
+            '<li>Visite de sites historiques tels que des temples, des parcs nationaux et des sites archéologiques</li>' +
+            '<li>Exploration de parcs nationaux et de réserves naturelles</li>' +
+            '<h2>Caractéristiques du terrain</h2>' +
+            '<p>Les caractéristiques des différents types de terrains peuvent faire une grande différence dans vos expériences. Voici quelques caractéristiques courantes des terrains :' +
+            '<ul><li><b>Formes</b> : Ces formes peuvent changer votre perception ou votre expérience de différentes parties du terrain. Par exemple, si vous voyez une vague monter d\'une colline après une longue journée debout, vous pourriez avoir envie de grimper encore un peu plus pour obtenir une meilleure perspective.</li>' +
+            '<li><b>Distance</b> : La distance entre deux montagnes ou océans affecte la manière dont vous les percevez et rend plus difficile la planification de votre randonnée. Si vous savez quelles montagnes ou océans convergent à un point pour offrir la meilleure vue, vous pourriez ne pas pouvoir planifier votre voyage aussi souvent.</li>' +
+            '<li><b>Caractéristiques du terrain</b> : Différentes caractéristiques du terrain peuvent créer des cartes intéressantes et fournir des aperçus des terrains environnants. Par exemple, une plage peut offrir de meilleures informations sur la région environnante, tandis qu\'une montagne pourrait être plus accessible sur une rivière.</li>' +
+            '<h2>Naviguer dans des paysages incertains</h2>' +
+            '<p>Bien que l\'exploration de territoires inconnus puisse sembler une tâche ardue, il existe plusieurs stratégies pour vous aider à affronter les défis des terrains de manière frontale. Voici quelques conseils :' +
+            '<ul><li><b>Familiarisez-vous avec les caractéristiques du terrain</b> :' +
+            'Avant de commencer votre voyage, assurez-vous de connaître les terrains que vous souhaitez éviter. Renseignez-vous sur les lieux à travers le monde et leurs caractéristiques. Ces connaissances peuvent vous aider à développer des mécanismes d\'adaptation pour faire face aux terrains difficiles sans vous perdre.</li>' +
+            '<li><b>Planifiez soigneusement votre itinéraire</b> :' +
+            'Une fois que vous avez une bonne compréhension des caractéristiques du terrain, planifiez soigneusement votre itinéraire. Assurez-vous de vérifier les prévisions météorologiques et de planifier vos itinéraires en conséquence. Une navigation précise peut également vous aider à traverser des terrains inconnus efficacement.</li>' +
+            '<li><b>Familiarisez-vous avec la région environnante</b> :' +
+            'Comprenez la disposition du terrain, y compris ses caractéristiques, sa végétation et ses caractéristiques géologiques. Faites des recherches sur la région environnante et comprenez la disposition du terrain pour assurer un voyage réussi.</li>' +
+            '<li><b>Pratiquez des habitudes de voyage sécuritaires</b> :' +
+            'Pour éviter les accidents et les blessures en naviguant dans des territoires inconnus, adoptez toujours des habitudes de voyage sécuritaires. Ne stressez pas trop à propos de l\'inconnu. Emportez toujours l\'équipement nécessaire et respectez les réglementations locales concernant l\'utilisation de l\'équipement.</li>' +
+            '<li><b>Planifiez soigneusement votre itinéraire</b> :' +
+            'Avant de quitter votre domicile, planifiez soigneusement votre itinéraire. Assurez-vous de comprendre le climat local et les conditions météorologiques avant de partir. Soyez prêt à ajuster vos plans si le paysage change.</li>' +
+            '</ul></p>',
+        icon: logo,
+        date: '2024-06-19',
+        url: '/article/percer-les-mysteres-de-la-confusion-des-terrains',
     }
 ];

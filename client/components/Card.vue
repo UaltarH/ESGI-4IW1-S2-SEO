@@ -20,7 +20,7 @@
         <time v-if="updateDate === undefined" :datetime="props.date" class="text-gray-400 dark:text-gray-700">Publié le {{ dateText(props.date) }}</time>
         <time v-else :datetime="props.updateDate" class="text-gray-400 dark:text-gray-700">Mis à jour le {{ dateText(props.updateDate!) }}</time>
       </div>
-      <NuxtLink :to="link" class="btn btn--primary">Lire la suite</NuxtLink>
+      <NuxtLink :to="link" class="btn btn--primary" :aria-label="`lire l'article ${props.title}`">Lire la suite</NuxtLink>
     </footer>
   </article>
 </template>
