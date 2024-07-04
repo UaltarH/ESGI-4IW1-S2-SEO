@@ -148,6 +148,7 @@ b {
 @layer components {
   .card {
     @apply divide-y divide-gray-200 dark:divide-gray-800
+      flex justify-between flex-col
     dark:bg-dark-blue-dark rounded-md
     ring-1 ring-gray-200 dark:ring-gray-800 hover:ring-gray-300 dark:hover:ring-gray-700;
   }
